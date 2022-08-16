@@ -1,0 +1,23 @@
+<section>
+  {{#each posts as |post| }}
+    <article class="post-container">
+      <div class="post-header">
+        <h2>
+          <a href="/api/posts/{{post.id}}">{{post.title}}</a>
+        </h2>
+        <h3>
+          Posted by <strong>{{post.user.username}}</strong> on <strong>{{format_date post.createdAt}}</strong>
+        </h3>
+      </div>
+        <p class="post-body">
+          {{post.content}}
+        </p>
+      <div class="post-footer">
+        <p>
+          {{post.comments.length}} Comments
+        </p>
+        <a href="/api/posts/{{post.id}}"><strong>View Post</strong></a>
+      </div>
+    </article>
+  {{/each}}
+</section>

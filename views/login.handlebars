@@ -1,0 +1,27 @@
+<section class="login-signup">
+    <form class="form login-form">
+        <h2>
+            Login
+        </h2>
+        <label for="username-login">username:</label>
+        <input class="form-input" type="text" id="username-login" required aria-required="true">
+        <label for="password-login">password:</label>
+        <input class="form-input" type="password" id="password-login" required aria-required="true" minlength="8"/>
+        <p class="error" style="display: none;">❌ Incorrect username or password. Please try again.</p>
+        <button class="btn btn-primary" type="submit">Login</button>
+    </form>
+    <form class="form signup-form">
+        <h2>
+            Sign Up
+        </h2>
+        <label for="username-signup">username:</label>
+        <input class="form-input" type="text" id="username-signup" required aria-required="true" minlength="2"/>
+        <label for="email-signup">email:</label>
+        <input class="form-input" type="email" id="email-signup" required aria-required="true" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/>
+        <label for="password-signup">password:</label>
+        <input class="form-input" type="password" id="password-signup" required aria-required="true" minlength="8"/>
+        <button class="btn btn-primary" type="submit">Sign Up</button>
+    </form>
+</section>
+
+<script src="/js/login.js"></script>
