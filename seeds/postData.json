@@ -1,0 +1,17 @@
+[
+  {
+      "title": "'Busy Bee'",
+      "content": "What a busy little bee you are, always working.",
+      "user_id": 1
+  },
+  {
+      "title": "'This project has a lot'",
+      "content": "'This project has a lot of work especially since it came during the big PROJECT time.'",
+      "user_id": 2
+  },
+  {
+      "title": "'Finished'",
+      "content": "'We are getting closer to completing this project.'",
+      "user_id": 3
+  }
+]

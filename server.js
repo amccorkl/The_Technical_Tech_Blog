@@ -13,15 +13,12 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 //set up handlebars.js engine with helpers
-const hbs = exhbs.create({ helpers });
+const hbs = exphbs.create({ helpers });
 
 //configuring session object with sequelize store
 const sess = {
   secret: process.env.SECRET,
-  cookie: {
-    //1 min
-    expires: 60000
-  },
+  cookie: {},
   resave: false,
   saveUninitialized: true,
   store: new SequelizeStore({
@@ -29,9 +26,9 @@ const sess = {
   }),
 };
 
-//initializing use of express-session and express.js as middleware
+
 app.use(session(sess));
-//initialize handlebars of template engine
+//inform express.js of handlebars as template engine
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 

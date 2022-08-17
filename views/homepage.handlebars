@@ -1,12 +1,11 @@
-<section>
   {{#each posts as |post| }}
-    <article class="post-container">
-      <div class="post-header">
+  <div class="row mb-4 project">
+    <div class="col-md-5">
         <h2>
-          <a href="/api/posts/{{post.id}}">{{post.title}}</a>
+          <a href="/posts/{{post.id}}">{{post.title}}</a>
         </h2>
         <h3>
-          Posted by <strong>{{post.user.username}}</strong> on <strong>{{format_date post.createdAt}}</strong>
+          Posted by {{post.user.username}} on {{format_date post.createdAt}}
         </h3>
       </div>
         <p class="post-body">
@@ -16,8 +15,7 @@
         <p>
           {{post.comments.length}} Comments
         </p>
-        <a href="/api/posts/{{post.id}}"><strong>View Post</strong></a>
+        <a href="/posts/{{post.id}}">View Post</a>
       </div>
     </article>
   {{/each}}
-</section>

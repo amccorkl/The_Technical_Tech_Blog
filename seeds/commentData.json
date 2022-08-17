@@ -1,0 +1,22 @@
+[
+  {
+      "comment": "Ever feel overwhelmed with everything you need to do?",
+      "post_id": "1",
+      "user_id": "1"
+  },
+  {
+      "comment": "I totally agree!",
+      "post_id": "1",
+      "user_id": "3"
+  },
+  {
+      "comment": "It depends on what you have going on in life and how much you already know about coding.",
+      "post_id": "2",
+      "user_id": "3"
+  },
+  {
+      "comment": "I would love to have 3 or 4 days off from everything to catch up on sleep and life.",
+      "post_id": "1",
+      "user_id": "2"
+  }
+]
